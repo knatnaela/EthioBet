@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="#0b122c"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="20sp"
+                android:textColor="#f6c403"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textColor="@android:color/black"
+                android:id="@+id/back" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+       <ScrollView
+           android:background="#001830"
+           android:layout_below="@id/appbar"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <androidx.cardview.widget.CardView
+                   android:visibility="gone"
+                   android:id="@+id/container"
+                   android:padding="10dp"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:visibility="gone"
+                       android:padding="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.appcompat.widget.AppCompatImageView
+                           android:layout_margin="10dp"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp" />
+
+                       <TextView
+                           android:layout_marginTop="15dp"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:text="Phone : "
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+
+               <View
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_below="@id/container"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/darker_gray"/>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_below="@id/container"
+
+                   android:id="@+id/container2"
+                   android:padding="10dp"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:padding="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.appcompat.widget.AppCompatImageView
+                           android:layout_margin="10dp"
+                           android:src="@drawable/ic_email_black_24dp"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp" />
+
+                       <TextView
+                           android:layout_marginTop="15dp"
+                           android:textSize="20sp"
+                           android:text="E-mail : "
+                           android:textStyle="bold"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+                       <TextView
+                           android:autoLink="email"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="12dp"
+                           android:textSize="16sp"
+                           android:textColor="#7A7474"
+                           android:text="knatnaelaadane@gmail.com"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+
+               <View
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_below="@id/container2"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/darker_gray"/>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_below="@id/container2"
+                   android:id="@+id/container3"
+                   android:padding="10dp"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:padding="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.appcompat.widget.AppCompatImageView
+                           android:layout_margin="10dp"
+                           android:src="@drawable/ic_location_on_black_24dp"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp" />
+
+                       <TextView
+                           android:layout_marginTop="15dp"
+                           android:textSize="20sp"
+                           android:text="Address : "
+                           android:textStyle="bold"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+                       <TextView
+                           android:autoLink="map"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="12dp"
+                           android:textSize="16sp"
+                           android:textColor="#7A7474"
+                           android:text="Ethiopia, Addis Ababa"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+
+               <View
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_below="@id/container2"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/darker_gray"/>
+
+               <androidx.cardview.widget.CardView
+                   android:visibility="gone"
+                   android:layout_below="@id/container3"
+                   android:id="@+id/container4"
+                   android:padding="10dp"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:padding="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+
+                       <TextView
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:text="Address"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+
+               <View
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_below="@id/container3"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/darker_gray"/>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_below="@id/container4"
+                   android:id="@+id/container5"
+                   android:padding="10dp"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:padding="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.appcompat.widget.AppCompatImageView
+                           android:layout_margin="10dp"
+                           android:src="@drawable/facebook"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp" />
+
+                       <TextView
+                           android:layout_marginTop="15dp"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:text="Facebook : "
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+                       <TextView
+                           android:autoLink="web"
+                           android:layout_marginLeft="10dp"
+                           android:textSize="15sp"
+                           android:textColor="#7A7474"
+                           android:text="www.facebook.com/natnael.adane.58"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+
+               <View
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_below="@id/container5"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/darker_gray"/>
+
+
+
+               <androidx.cardview.widget.CardView
+                   android:visibility="gone"
+                   android:layout_below="@id/container5"
+                   android:id="@+id/container6"
+                   android:padding="10dp"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:padding="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:text="Twitter : "
+                           android:layout_marginTop="15dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+                       <TextView
+                           android:autoLink="web"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="12dp"
+                           android:textSize="15sp"
+                           android:textColor="#7A7474"
+                           android:text="twitter.com/HopeMusicEnt"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="10dp" />
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+
+               <View
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_below="@id/container6"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/darker_gray"/>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_below="@id/container6"
+                   android:id="@+id/container7"
+                   android:padding="10dp"
+                   android:layout_margin="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:padding="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <androidx.appcompat.widget.AppCompatImageView
+                           android:layout_margin="10dp"
+                           android:src="@drawable/instagram"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp" />
+
+                       <TextView
+                           android:layout_marginTop="15dp"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:text="Instagram : "
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+                       <TextView
+                           android:autoLink="web"
+                           android:layout_marginLeft="10dp"
+                           android:textSize="15sp"
+                           android:textColor="#7A7474"
+                           android:text="www.instagram.com/nattyxll/"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="10dp" />
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+
+               <View
+                   android:id="@+id/last_view"
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:layout_below="@id/container7"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/darker_gray"/>
+
+               <RelativeLayout
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@id/last_view"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <RelativeLayout
+                       android:gravity="center"
+                       android:id="@+id/hope_image_container"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+
+                           android:id="@+id/hope_image"
+                           android:layout_width="80dp"
+                           android:layout_height="80dp"
+                           android:src="@drawable/logo"
+                           />
+
+                       <TextView
+                           android:id="@+id/publisher"
+                           android:layout_marginTop="20dp"
+                           android:layout_marginLeft="8dp"
+                           android:layout_toRightOf="@id/hope_image"
+                           android:textColor="#f6c403"
+                           android:textSize="20sp"
+                           android:textStyle="bold"
+                           android:text="@string/app_name"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_toEndOf="@id/hope_image" />
+                   </RelativeLayout>
+
+
+
+               </RelativeLayout>
+
+
+           </RelativeLayout>
+
+       </ScrollView>
+
+
+
+</RelativeLayout>

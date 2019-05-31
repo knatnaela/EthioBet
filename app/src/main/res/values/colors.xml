@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="axum_bet_toolbar_color">#FFFF</color>
+    <color name="axum_bet_title_color">#F80F00</color>
+    <color name="galaxy_bet_toolbar_color">#052AFD</color>
+    <color name="galaxy_bet_title_color">#F80F00</color>
+    <color name="hulu_bet_toolbar_color">#00A507</color>
+    <color name="hulu_bet_title_color">#FFFFFF</color>
+    <color name="vamos_bet_toolbar_color">#008BFC</color>
+    <color name="vamos_bet_title_color">#FFFFFF</color>
+</resources>

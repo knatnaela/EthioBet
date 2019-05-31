@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#001830"
+            app:titleTextColor="#f6c403"
+            app:title="sss"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@android:color/holo_blue_dark"
+            app:tabIndicatorHeight="2dp"
+            android:background="#001830"
+            app:tabSelectedTextColor="#f6c403"
+            app:tabTextColor="#96551E">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAxum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axum Bet" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGalaxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Galaxy Bet" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHulu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hulu Bet" />
+
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabVamos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vamos Bet" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:background="#000000"
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
